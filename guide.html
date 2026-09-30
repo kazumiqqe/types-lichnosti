@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Учебный гид по четырём группам типов личности: Аналитики, Дипломаты, Исследователи, Опекуны.">
+  <title>Тест-гид - Типы личности</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Типы<span>Личности</span></a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="types.html">Типы</a></li>
+          <li><a href="guide.html" class="active" aria-current="page">Тест-гид</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="h-guide">
+      <h1 id="h-guide">Тест-гид: как пройти тест и понять результат</h1>
+      <p class="lead">Тест на тип личности - это опросник из десятков утверждений, где вы выбираете, что ближе именно
+        вам. Ниже можно сразу пройти короткий тест и узнать, к какой из четырёх групп вы ближе, а затем прочитать, как
+        подготовиться и как понимать результат.</p>
+    </section>
+
+    <section id="test" aria-labelledby="h-test">
+      <h2 id="h-test">Пройти тест</h2>
+      <div class="test-card" id="quiz">
+        <div id="quiz-intro">
+          <p><strong>15 вопросов, около 3 минут.</strong> В каждом вопросе выберите утверждение, которое больше похоже
+            на вас в большинстве ситуаций. Правильных ответов нет.</p>
+          <p>Результат - одна из четырёх групп: Аналитики, Дипломаты, Исследователи или Опекуны - и профиль по трём
+            шкалам.</p>
+          <button type="button" class="btn" id="quiz-start">Начать тест</button>
+          <noscript>
+            <p class="note">Для прохождения теста нужен включённый JavaScript.</p>
+          </noscript>
+        </div>
+        <div id="quiz-run" hidden>
+          <div class="progress" role="progressbar" aria-label="Прогресс теста" aria-valuemin="0" aria-valuemax="15"
+            aria-valuenow="0"><span id="quiz-bar"></span></div>
+          <p id="quiz-count" aria-live="polite">Вопрос 1 из 15</p>
+          <h3 id="quiz-q">Выберите утверждение, которое ближе к вам</h3>
+          <div class="choices" id="quiz-choices"></div>
+          <button type="button" class="btn outline" id="quiz-back">Назад</button>
+        </div>
+        <div id="quiz-result" hidden aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-steps">
+      <h2 id="h-steps">Пять шагов</h2>
+      <ol class="steps">
+        <li>
+          <h3>Выберите спокойное время</h3>
+          <p>Усталость и сильные эмоции искажают ответы. Проходите тест, когда вы в обычном состоянии, без спешки.</p>
+        </li>
+        <li>
+          <h3>Отвечайте, как есть, а не как надо</h3>
+          <p>Выбирайте вариант, который описывает вас в большинстве ситуаций, а не образ «идеального себя» или
+            профессиональную маску.</p>
+        </li>
+        <li>
+          <h3>Не задумывайтесь слишком долго</h3>
+          <p>Первая интуитивная реакция обычно точнее длительных раздумий. Если сомневаетесь, вспомните, как вы вели
+            себя в последний раз.</p>
+        </li>
+        <li>
+          <h3>Посмотрите на выраженность, а не только на буквы</h3>
+          <p>Результат «55 % интроверсии» почти нейтрален, а «90 %» - яркая черта. Пограничные значения означают
+            гибкость.</p>
+        </li>
+        <li>
+          <h3>Сверьте описание с жизнью</h3>
+          <p>Если описание не узнаётся, перечитайте соседние типы. Окончательное решение о том, какой тип вам ближе,
+            принимаете вы сами.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="h-axes">
+      <h2 id="h-axes">Что измеряют четыре шкалы</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Шкала</th>
+              <th scope="col">Полюс 1</th>
+              <th scope="col">Полюс 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Источник энергии</th>
+              <td>E - экстраверсия: заряжается от общения и активности</td>
+              <td>I - интроверсия: восстанавливается в одиночестве</td>
+            </tr>
+            <tr>
+              <th scope="row">Восприятие информации</th>
+              <td>S - ощущения: факты, конкретика, опыт</td>
+              <td>N - интуиция: закономерности, идеи, возможности</td>
+            </tr>
+            <tr>
+              <th scope="row">Принятие решений</th>
+              <td>T - мышление: логика и объективные критерии</td>
+              <td>F - чувства: ценности и влияние на людей</td>
+            </tr>
+            <tr>
+              <th scope="row">Образ жизни</th>
+              <td>J - суждение: планы, порядок, завершённость</td>
+              <td>P - восприятие: гибкость, импровизация, открытость</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-crit">
+      <h2 id="h-crit">Важные оговорки</h2>
+      <div class="note">
+        <p>Типология MBTI популярна, но в академической психологии её считают менее надёжной, чем модель «Большая
+          пятёрка» (Big Five): у MBTI деление на категории условно, а результат повторного теста у части людей меняется.
+        </p>
+        <p style="margin:0">Поэтому используйте типы как удобный язык для разговора о различиях, а не как научный
+          вердикт. Не выбирайте профессию и не оценивайте людей только по четырём буквам.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 «Типы личности» - учебный проект. Материалы носят ознакомительный характер и не заменяют консультацию
+        психолога.</p>
+      <p><a href="contacts.html">Связаться с нами</a></p>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+
+</html>

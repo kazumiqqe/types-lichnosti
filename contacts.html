@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Учебный гид по четырём группам типов личности: Аналитики, Дипломаты, Исследователи, Опекуны.">
+  <title>Контакты - Типы личности</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">Типы<span>Личности</span></a>
+      <nav class="main-nav" aria-label="Основная навигация">
+        <ul>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="types.html">Типы</a></li>
+          <li><a href="guide.html">Тест-гид</a></li>
+          <li><a href="contacts.html" class="active" aria-current="page">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section aria-labelledby="h-contacts">
+      <h1 id="h-contacts">Контакты</h1>
+      <p class="lead">Есть вопрос по материалам, замечание или идея для нового раздела? Напишите нам - мы читаем все
+        сообщения.</p>
+    </section>
+    <section class="grid-2" aria-label="Связь с нами">
+      <article class="card">
+        <h2>Форма обратной связи</h2>
+        <form action="#" method="post" onsubmit="return false">
+          <div><label for="name">Имя</label><input id="name" name="name" type="text" placeholder="Как к вам обращаться"
+              required></div>
+          <div><label for="email">Электронная почта</label><input id="email" name="email" type="email"
+              placeholder="name@example.com" required></div>
+          <div><label for="topic">Тема</label>
+            <select id="topic" name="topic">
+              <option>Вопрос по типам</option>
+              <option>Ошибка на сайте</option>
+              <option>Предложение</option>
+            </select>
+          </div>
+          <div><label for="msg">Сообщение</label><textarea id="msg" name="msg" rows="5" required></textarea></div>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+        <p class="note" style="margin-top:1rem">Форма учебная: отправка данных не реализована (см. раздел «Дальнейшее
+          развитие» в отчёте).</p>
+      </article>
+      <article class="card">
+        <h2>Как нас найти</h2>
+        <address style="font-style:normal">
+          <p><strong>Проект:</strong> «Типы личности» (учебный)</p>
+          <p><strong>Почта:</strong> <a href="mailto:info@example.com">info@example.com</a></p>
+          <p><strong>Город:</strong> Петропавловск, Казахстан</p>
+          <p><strong>Ответ:</strong> в течение 2–3 рабочих дней</p>
+        </address>
+        <img class="illustration" src="img/contact.svg" width="600" height="400" alt="Схематичная карта с меткой"
+          loading="lazy">
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 «Типы личности» - учебный проект. Материалы носят ознакомительный характер и не заменяют консультацию
+        психолога.</p>
+      <p><a href="contacts.html">Связаться с нами</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
